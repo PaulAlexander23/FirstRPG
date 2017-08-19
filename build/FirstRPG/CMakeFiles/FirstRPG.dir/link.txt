@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11   CMakeFiles/FirstRPG.dir/Main.cpp.o CMakeFiles/FirstRPG.dir/Landscape.cpp.o  -o ../bin/FirstRPG -rdynamic 
