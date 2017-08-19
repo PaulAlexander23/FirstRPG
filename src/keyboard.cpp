@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Keyboard.h"
-
+#include "keyboard.h"
 
 CKeyboard::CKeyboard()
 {

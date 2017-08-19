@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Main.h"
-
+#include "game.h"
 
 CMain::CMain(CUI* p_userInteraction, int passed_ScreenWidth, int passed_ScreenHeight)
 {

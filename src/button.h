@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class Cbutton
 {
 public:
@@ -13,4 +16,3 @@ private:
 	SDL_Rect rect;
 	std::string text;
 };
-

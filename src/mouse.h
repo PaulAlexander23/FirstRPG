@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class CMouse
 {
 public:
@@ -18,4 +21,3 @@ private:
 
 
 };
-

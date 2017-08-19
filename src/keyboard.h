@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class CKeyboard
 {
 public:
@@ -15,4 +18,3 @@ private:
 	int dist;
 	
 };
-

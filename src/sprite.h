@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class CSprite
 {
 public:
@@ -24,4 +27,3 @@ private:
 	SDL_Point centre[2];
 
 };
-

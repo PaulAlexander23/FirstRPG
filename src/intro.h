@@ -1,13 +1,12 @@
 #pragma once
 
-#include "SDL_Setup.h"
-#include "Sprite.h"
-#include "Keyboard.h"
-#include "Landscape.h"
-#include "Character.h"
+#include "main.h"
+
+#include "sprite.h"
+#include "map.h"
+#include "player.h"
 #include "UI.h"
-#include "IntroGUI.h"
-#include "Cbutton.h"
+#include "button.h"
 
 class CIntro
 {
@@ -22,7 +21,7 @@ private:
 	CSDL_Setup* csdl_setup;
 
 	CLandscape* background;
-//	CIntroGUI* GUI;
+
 	Cbutton* newgamebtn;
 	Cbutton* loadgamebtn;
 	Cbutton* quitbtn;
@@ -31,4 +30,3 @@ private:
 
 
 };
-

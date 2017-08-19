@@ -1,9 +1,10 @@
 #pragma once
-#include "SDL_Setup.h"
-#include "Sprite.h"
-#include "Keyboard.h"
-#include "Landscape.h"
-#include "Character.h"
+
+#include "main.h"
+
+#include "sprite.h"
+#include "map.h"
+#include "player.h"
 #include "UI.h"
 
 class CMain
@@ -30,4 +31,3 @@ private:
 	int timeCheck;
 	int frame;
 };
-

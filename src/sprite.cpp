@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Sprite.h"
-
+#include "sprite.h"
 
 CSprite::CSprite(SDL_Renderer* passed_renderer, std::string FilePath, int x, int y, int w, int h)
 {

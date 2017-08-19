@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Intro.h"
-
+#include "intro.h"
 
 CIntro::CIntro(CUI* p_userInteraction)
 {

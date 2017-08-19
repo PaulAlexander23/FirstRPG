@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 #include "Sprite.h"
 
 class CCharacter
@@ -24,4 +27,3 @@ private:
 	int frame;
 
 };
-

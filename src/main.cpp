@@ -1,11 +1,10 @@
-// FirstRPG.cpp : Defines the entry point for the console application.
+// main.cpp : Defines the entry point for the console application.
 
-#include "stdafx.h"
+#include "main.h"
 
 int main(int argc, char *argv[])
 {
 	CUI* ui = new CUI();
-
 
 	CIntro* cintro = new CIntro(ui);
 	cintro->intro();
@@ -14,6 +13,8 @@ int main(int argc, char *argv[])
 	CMain* cmain = new CMain(ui,1280,640);
 	cmain->GameLoop();
 	delete cmain;
+
+
 
 	delete ui;
 

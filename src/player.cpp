@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Character.h"
-
+#include "player.h"
 
 CCharacter::CCharacter(SDL_Renderer* passed_renderer, std::string FilePath, int passed_x, int passed_y, int w, int h)
 {

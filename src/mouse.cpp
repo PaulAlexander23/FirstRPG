@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Mouse.h"
-
+#include "mouse.h"
 
 CMouse::CMouse()
 {

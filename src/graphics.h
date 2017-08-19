@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class CSDL_Setup
 {
 public:
@@ -16,4 +19,3 @@ private:
 	SDL_Event* mainEvent;
 
 };
-

@@ -1,4 +1,7 @@
 #pragma once
+
+#include "main.h"
+
 class CLandscape
 {
 public:
@@ -15,4 +18,3 @@ private:
 
 
 };
-

@@ -1,5 +1,4 @@
-#include "stdafx.h"
-#include "SDL_Setup.h"
+#include "graphics.h"
 
 CSDL_Setup::CSDL_Setup(bool* quit, int ScreenWidth, int ScreenHeight)
 {

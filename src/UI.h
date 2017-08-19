@@ -1,6 +1,6 @@
 #pragma once
-#include "Keyboard.h"
-#include "Mouse.h"
+
+#include "main.h"
 
 class CUI
 {
@@ -16,4 +16,3 @@ private:
 	
 
 };
-

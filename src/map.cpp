@@ -1,6 +1,4 @@
-#include "stdafx.h"
-#include "Landscape.h"
-
+#include "map.h"
 
 CLandscape::CLandscape(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h)
 {
