@@ -1,0 +1,3 @@
+/home/paul/Repositories/FirstRPG/debug/CMakeFiles/rebuild_cache.dir
+/home/paul/Repositories/FirstRPG/debug/CMakeFiles/edit_cache.dir
+/home/paul/Repositories/FirstRPG/debug/CMakeFiles/FirstRPG.dir

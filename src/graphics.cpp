@@ -1,6 +1,6 @@
 #include "graphics.h"
 
-CSDL_Setup::CSDL_Setup(bool* quit, int ScreenWidth, int ScreenHeight)
+graphics::graphics(bool* quit, int ScreenWidth, int ScreenHeight)
 {
 
 	window = NULL;
@@ -12,34 +12,27 @@ CSDL_Setup::CSDL_Setup(bool* quit, int ScreenWidth, int ScreenHeight)
 	}
 	renderer = NULL;
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC|SDL_RENDERER_ACCELERATED);
-	mainEvent = new SDL_Event();
 }
 
 
-CSDL_Setup::~CSDL_Setup()
+graphics::~graphics()
 {
 	SDL_DestroyWindow(window);
 	SDL_DestroyRenderer(renderer);
 	delete mainEvent;
 }
 
-SDL_Renderer* CSDL_Setup::GetRenderer()
+SDL_Renderer* graphics::GetRenderer()
 {
 	return renderer;
 }
 
-SDL_Event* CSDL_Setup::GetMainEvent()
+void graphics::Begin()
 {
-	return mainEvent;
-}
-
-void CSDL_Setup::Begin()
-{
-	SDL_PollEvent(mainEvent);
 	SDL_RenderClear(renderer);
 }
 
-void CSDL_Setup::End()
+void graphics::End()
 {
 	SDL_RenderPresent(renderer);
 }

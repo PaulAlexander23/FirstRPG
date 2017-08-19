@@ -8,13 +8,5 @@
 #include "keyboard.h"
 #include "mouse.h"
 
-#include "game.h"
-#include "intro.h"
-
-enum keys
-{
-	LEFT,
-	RIGHT,
-	UP,
-	DOWN
-};
+//#include "game.h"
+//#include "intro.h"

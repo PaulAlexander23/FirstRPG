@@ -2,11 +2,11 @@
 
 #include "main.h"
 
-class CSDL_Setup
+class graphics
 {
 public:
-	CSDL_Setup(bool* quit, int ScreenWidth, int ScreenHeight);
-	~CSDL_Setup();
+	graphics(bool* quit, int ScreenWidth, int ScreenHeight);
+	~graphics();
 
 	SDL_Renderer* GetRenderer();
 	SDL_Event* GetMainEvent();

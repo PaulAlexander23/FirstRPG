@@ -1,61 +1,18 @@
+#include "main.h"
 #include "keyboard.h"
 
-CKeyboard::CKeyboard()
+keyboard::keyboard()
 {
-	for (int i = 0; i < 4; i++)
-	{
-		keyState[i] = false;
-	}
-
-	dist = 0;
+	state = SDL_GetKeyboardState(NULL);
 }
 
 
-CKeyboard::~CKeyboard()
+keyboard::~keyboard()
 {
 
 }
 
-void CKeyboard::KeyDown(SDL_Keycode key)
+bool keyboard::GetState(SDL_Keycode key)
 {
-	switch (key)
-	{
-	case SDLK_a:
-		keyState[LEFT] = true;		
-		break;
-	case SDLK_d:
-		keyState[RIGHT] = true;		
-		break;
-	case SDLK_s:
-		keyState[DOWN] = true;
-		break;
-	case SDLK_w:
-		keyState[UP] = true;
-		break;
-	default:
-		break;
-	}
+    return state[SDL_GetScancodeFromKey(key)];	
 }
-
-void CKeyboard::KeyUp(SDL_Keycode key)
-{
-	switch (key)
-	{
-	case SDLK_a:
-		keyState[LEFT] = false;
-		break;
-	case SDLK_d:
-		keyState[RIGHT] = false;
-		break;
-	case SDLK_s:
-		keyState[DOWN] = false;
-		break;
-	case SDLK_w:
-		keyState[UP] = false;
-		break;
-	default:
-		break;
-	} 
-	//std::cout << "rekt" << std::endl;
-}
-

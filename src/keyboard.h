@@ -1,20 +1,14 @@
 #pragma once
 
-#include "main.h"
-
-class CKeyboard
+class keyboard
 {
 public:
-	CKeyboard();
-	~CKeyboard();
+	keyboard();
+	~keyboard();
 
-	void KeyDown(SDL_Keycode key);
-	void KeyUp(SDL_Keycode key);
-
-	bool keyState[4];
+    bool GetState(SDL_Keycode key);
 
 private:
-
-	int dist;
+    const Uint8 *state;
 	
 };

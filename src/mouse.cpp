@@ -1,26 +1,27 @@
+#include "main.h"
 #include "mouse.h"
 
-CMouse::CMouse()
+mouse::mouse()
 {
 	
 }
 
-CMouse::~CMouse()
+mouse::~mouse()
 {
 
 }
 
-void CMouse::BtnDown(bool btn)
-{
-	
-}
-
-void CMouse::BtnUp(bool btn)
+void mouse::BtnDown(bool btn)
 {
 	
 }
 
-void CMouse::GetMousePosition(SDL_Point& point)
+void mouse::BtnUp(bool btn)
+{
+	
+}
+
+void mouse::GetMousePosition(SDL_Point& point)
 {
 	int* x = NULL;
 	int* y = NULL;

@@ -1,12 +1,10 @@
 #pragma once
 
-#include "main.h"
-
-class CMouse
+class mouse
 {
 public:
-	CMouse();
-	~CMouse();
+	mouse();
+	~mouse();
 
 	void BtnDown(bool btn);
 	void BtnUp(bool btn);
@@ -16,8 +14,6 @@ public:
 	bool btnState[2];
 
 private:
-	
-
 
 
 };

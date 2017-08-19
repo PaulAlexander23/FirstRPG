@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Ants.dir/src/main.cpp.o  -o Ants -rdynamic -L/usr/lib/x86_64-linux-gnu  -lSDL2 
