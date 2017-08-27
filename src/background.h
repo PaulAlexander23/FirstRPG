@@ -2,11 +2,11 @@
 
 #include "main.h"
 
-class map
+class background
 {
 public:
-	map(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h);
-	~map();
+	background(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h);
+	~background();
 
 	void Draw();
 

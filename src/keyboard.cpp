@@ -9,7 +9,7 @@ keyboard::keyboard()
 
 keyboard::~keyboard()
 {
-
+    state = NULL;
 }
 
 bool keyboard::GetState(SDL_Keycode key)

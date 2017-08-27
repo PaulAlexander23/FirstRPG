@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/paul/Repositories/FirstRPG/src/background.cpp
+background.h
+/home/paul/Repositories/FirstRPG/src/background.h
+
+/home/paul/Repositories/FirstRPG/src/background.h
+main.h
+/home/paul/Repositories/FirstRPG/src/main.h
+
+/home/paul/Repositories/FirstRPG/src/button.cpp
+button.h
+/home/paul/Repositories/FirstRPG/src/button.h
+
+/home/paul/Repositories/FirstRPG/src/button.h
+main.h
+/home/paul/Repositories/FirstRPG/src/main.h
+
 /home/paul/Repositories/FirstRPG/src/graphics.cpp
 graphics.h
 /home/paul/Repositories/FirstRPG/src/graphics.h
@@ -25,6 +41,10 @@ keyboard.h
 /home/paul/Repositories/FirstRPG/src/main.cpp
 main.h
 /home/paul/Repositories/FirstRPG/src/main.h
+background.h
+/home/paul/Repositories/FirstRPG/src/background.h
+button.h
+/home/paul/Repositories/FirstRPG/src/button.h
 
 /home/paul/Repositories/FirstRPG/src/main.h
 SDL2/SDL.h

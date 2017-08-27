@@ -1,6 +1,6 @@
-#include "map.h"
+#include "background.h"
 
-map::map(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h)
+background::background(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h)
 {
 	renderer = passed_renderer;
 
@@ -16,15 +16,14 @@ map::map(SDL_Renderer* passed_renderer, std::string FilePath, int w, int h)
 }
 
 
-map::~map()
+background::~background()
 {
-	SDL_DestroyTexture(image);
+    SDL_DestroyTexture(image);
+    renderer = NULL;
 }
 
 
-void map::Draw()
+void background::Draw()
 {
-	SDL_RenderCopy(renderer, image,NULL,&rect);
-
-
+	SDL_RenderCopy(renderer, image, NULL, &rect);
 }

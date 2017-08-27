@@ -153,12 +153,62 @@ CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o.provides: CMakeFiles/FirstRPG.dir/src
 CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o.provides.build: CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o
 
 
+CMakeFiles/FirstRPG.dir/src/background.cpp.o: CMakeFiles/FirstRPG.dir/flags.make
+CMakeFiles/FirstRPG.dir/src/background.cpp.o: ../src/background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paul/Repositories/FirstRPG/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FirstRPG.dir/src/background.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FirstRPG.dir/src/background.cpp.o -c /home/paul/Repositories/FirstRPG/src/background.cpp
+
+CMakeFiles/FirstRPG.dir/src/background.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FirstRPG.dir/src/background.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paul/Repositories/FirstRPG/src/background.cpp > CMakeFiles/FirstRPG.dir/src/background.cpp.i
+
+CMakeFiles/FirstRPG.dir/src/background.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FirstRPG.dir/src/background.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paul/Repositories/FirstRPG/src/background.cpp -o CMakeFiles/FirstRPG.dir/src/background.cpp.s
+
+CMakeFiles/FirstRPG.dir/src/background.cpp.o.requires:
+
+.PHONY : CMakeFiles/FirstRPG.dir/src/background.cpp.o.requires
+
+CMakeFiles/FirstRPG.dir/src/background.cpp.o.provides: CMakeFiles/FirstRPG.dir/src/background.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/background.cpp.o.provides.build
+.PHONY : CMakeFiles/FirstRPG.dir/src/background.cpp.o.provides
+
+CMakeFiles/FirstRPG.dir/src/background.cpp.o.provides.build: CMakeFiles/FirstRPG.dir/src/background.cpp.o
+
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.o: CMakeFiles/FirstRPG.dir/flags.make
+CMakeFiles/FirstRPG.dir/src/button.cpp.o: ../src/button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paul/Repositories/FirstRPG/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FirstRPG.dir/src/button.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FirstRPG.dir/src/button.cpp.o -c /home/paul/Repositories/FirstRPG/src/button.cpp
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FirstRPG.dir/src/button.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paul/Repositories/FirstRPG/src/button.cpp > CMakeFiles/FirstRPG.dir/src/button.cpp.i
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FirstRPG.dir/src/button.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paul/Repositories/FirstRPG/src/button.cpp -o CMakeFiles/FirstRPG.dir/src/button.cpp.s
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.o.requires:
+
+.PHONY : CMakeFiles/FirstRPG.dir/src/button.cpp.o.requires
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.o.provides: CMakeFiles/FirstRPG.dir/src/button.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/button.cpp.o.provides.build
+.PHONY : CMakeFiles/FirstRPG.dir/src/button.cpp.o.provides
+
+CMakeFiles/FirstRPG.dir/src/button.cpp.o.provides.build: CMakeFiles/FirstRPG.dir/src/button.cpp.o
+
+
 # Object files for target FirstRPG
 FirstRPG_OBJECTS = \
 "CMakeFiles/FirstRPG.dir/src/main.cpp.o" \
 "CMakeFiles/FirstRPG.dir/src/graphics.cpp.o" \
 "CMakeFiles/FirstRPG.dir/src/mouse.cpp.o" \
-"CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o"
+"CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o" \
+"CMakeFiles/FirstRPG.dir/src/background.cpp.o" \
+"CMakeFiles/FirstRPG.dir/src/button.cpp.o"
 
 # External object files for target FirstRPG
 FirstRPG_EXTERNAL_OBJECTS =
@@ -167,9 +217,11 @@ FirstRPG: CMakeFiles/FirstRPG.dir/src/main.cpp.o
 FirstRPG: CMakeFiles/FirstRPG.dir/src/graphics.cpp.o
 FirstRPG: CMakeFiles/FirstRPG.dir/src/mouse.cpp.o
 FirstRPG: CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o
+FirstRPG: CMakeFiles/FirstRPG.dir/src/background.cpp.o
+FirstRPG: CMakeFiles/FirstRPG.dir/src/button.cpp.o
 FirstRPG: CMakeFiles/FirstRPG.dir/build.make
 FirstRPG: CMakeFiles/FirstRPG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paul/Repositories/FirstRPG/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable FirstRPG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paul/Repositories/FirstRPG/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable FirstRPG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FirstRPG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +233,8 @@ CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/main.cpp.o.require
 CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/graphics.cpp.o.requires
 CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/mouse.cpp.o.requires
 CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o.requires
+CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/background.cpp.o.requires
+CMakeFiles/FirstRPG.dir/requires: CMakeFiles/FirstRPG.dir/src/button.cpp.o.requires
 
 .PHONY : CMakeFiles/FirstRPG.dir/requires
 

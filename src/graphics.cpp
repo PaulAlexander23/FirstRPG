@@ -19,7 +19,6 @@ graphics::~graphics()
 {
 	SDL_DestroyWindow(window);
 	SDL_DestroyRenderer(renderer);
-	delete mainEvent;
 }
 
 SDL_Renderer* graphics::GetRenderer()

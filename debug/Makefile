@@ -123,6 +123,60 @@ FirstRPG/fast:
 	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/build
 .PHONY : FirstRPG/fast
 
+src/background.o: src/background.cpp.o
+
+.PHONY : src/background.o
+
+# target to build an object file
+src/background.cpp.o:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/background.cpp.o
+.PHONY : src/background.cpp.o
+
+src/background.i: src/background.cpp.i
+
+.PHONY : src/background.i
+
+# target to preprocess a source file
+src/background.cpp.i:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/background.cpp.i
+.PHONY : src/background.cpp.i
+
+src/background.s: src/background.cpp.s
+
+.PHONY : src/background.s
+
+# target to generate assembly for a file
+src/background.cpp.s:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/background.cpp.s
+.PHONY : src/background.cpp.s
+
+src/button.o: src/button.cpp.o
+
+.PHONY : src/button.o
+
+# target to build an object file
+src/button.cpp.o:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/button.cpp.o
+.PHONY : src/button.cpp.o
+
+src/button.i: src/button.cpp.i
+
+.PHONY : src/button.i
+
+# target to preprocess a source file
+src/button.cpp.i:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/button.cpp.i
+.PHONY : src/button.cpp.i
+
+src/button.s: src/button.cpp.s
+
+.PHONY : src/button.s
+
+# target to generate assembly for a file
+src/button.cpp.s:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/button.cpp.s
+.PHONY : src/button.cpp.s
+
 src/graphics.o: src/graphics.cpp.o
 
 .PHONY : src/graphics.o
@@ -240,6 +294,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FirstRPG"
+	@echo "... src/background.o"
+	@echo "... src/background.i"
+	@echo "... src/background.s"
+	@echo "... src/button.o"
+	@echo "... src/button.i"
+	@echo "... src/button.s"
 	@echo "... src/graphics.o"
 	@echo "... src/graphics.i"
 	@echo "... src/graphics.s"
