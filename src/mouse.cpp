@@ -3,7 +3,7 @@
 
 mouse::mouse()
 {
-	
+
 }
 
 mouse::~mouse()
@@ -11,21 +11,20 @@ mouse::~mouse()
 
 }
 
-void mouse::BtnDown(bool btn)
+bool mouse::GetState(int button)
 {
-	
+  	if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(button))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
-void mouse::BtnUp(bool btn)
+SDL_Point mouse::GetPosition()
 {
-	
-}
-
-void mouse::GetMousePosition(SDL_Point& point)
-{
-	int* x = NULL;
-	int* y = NULL;
-	SDL_GetMouseState(x,y);
-	point.x = *x;
-	point.y = *y;
+    SDL_GetMouseState(&position.x, &position.y);
+    return position;
 }

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(FirstRPG)
 
-add_executable(${PROJECT_NAME} src/main.cpp src/graphics.cpp src/mouse.cpp src/keyboard.cpp src/background.cpp src/button.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/graphics.cpp src/mouse.cpp src/keyboard.cpp src/background.cpp src/button.cpp src/intro.cpp)
 
 #find_package(SDL2 REQUIRED)
 #find_package(SDL2IMAGE REQUIRED)

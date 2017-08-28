@@ -30,6 +30,18 @@ graphics.h
 main.h
 /home/paul/Repositories/FirstRPG/src/main.h
 
+/home/paul/Repositories/FirstRPG/src/intro.cpp
+intro.h
+/home/paul/Repositories/FirstRPG/src/intro.h
+
+/home/paul/Repositories/FirstRPG/src/intro.h
+main.h
+/home/paul/Repositories/FirstRPG/src/main.h
+background.h
+/home/paul/Repositories/FirstRPG/src/background.h
+button.h
+/home/paul/Repositories/FirstRPG/src/button.h
+
 /home/paul/Repositories/FirstRPG/src/keyboard.cpp
 main.h
 /home/paul/Repositories/FirstRPG/src/main.h
@@ -41,10 +53,8 @@ keyboard.h
 /home/paul/Repositories/FirstRPG/src/main.cpp
 main.h
 /home/paul/Repositories/FirstRPG/src/main.h
-background.h
-/home/paul/Repositories/FirstRPG/src/background.h
-button.h
-/home/paul/Repositories/FirstRPG/src/button.h
+intro.h
+/home/paul/Repositories/FirstRPG/src/intro.h
 
 /home/paul/Repositories/FirstRPG/src/main.h
 SDL2/SDL.h

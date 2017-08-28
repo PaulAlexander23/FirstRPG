@@ -6,14 +6,9 @@ public:
 	mouse();
 	~mouse();
 
-	void BtnDown(bool btn);
-	void BtnUp(bool btn);
-
-	void GetMousePosition(SDL_Point& point);
-
-	bool btnState[2];
+    bool GetState(int button);
+    SDL_Point GetPosition();
 
 private:
-
-
+    SDL_Point position;
 };

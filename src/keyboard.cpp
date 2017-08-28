@@ -14,5 +14,5 @@ keyboard::~keyboard()
 
 bool keyboard::GetState(SDL_Keycode key)
 {
-    return state[SDL_GetScancodeFromKey(key)];	
+    return state[SDL_GetScancodeFromKey(key)];
 }

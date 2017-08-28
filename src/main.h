@@ -7,6 +7,3 @@
 #include "graphics.h"
 #include "keyboard.h"
 #include "mouse.h"
-
-//#include "game.h"
-//#include "intro.h"

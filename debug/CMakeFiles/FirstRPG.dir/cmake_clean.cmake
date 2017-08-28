@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FirstRPG.dir/src/keyboard.cpp.o"
   "CMakeFiles/FirstRPG.dir/src/background.cpp.o"
   "CMakeFiles/FirstRPG.dir/src/button.cpp.o"
+  "CMakeFiles/FirstRPG.dir/src/intro.cpp.o"
   "FirstRPG.pdb"
   "FirstRPG"
 )

@@ -2,31 +2,28 @@
 
 #include "main.h"
 
-#include "sprite.h"
-#include "map.h"
-#include "player.h"
-#include "UI.h"
+#include "background.h"
 #include "button.h"
 
-class CIntro
+class intro
 {
 public:
-	CIntro(CUI* p_userInteraction);
-	~CIntro();
+	intro();
+	~intro();
 
-	void intro();
+	int main();
 
 private:
 	bool quit;
-	CSDL_Setup* csdl_setup;
+	graphics* g;
+    keyboard* k;
+    mouse* m;
+    SDL_Event* e;
 
-	CLandscape* background;
-
-	Cbutton* newgamebtn;
-	Cbutton* loadgamebtn;
-	Cbutton* quitbtn;
-
-	CUI* userInteraction;
-
+	background b;
+	button btn_new_game;
+    //button btn_load_game(g.GetRenderer(), ubuntu_regular, "Load Game", 510, 32 * 7, 320, 32, BLACK);
+  	//button btn_options(g.GetRenderer(), ubuntu_regular, "Options", 510, 32 * 9, 320, 32, BLACK);
+    //button btn_quit(g.GetRenderer(), ubuntu_regular, "Quit", 510, 32 * 11, 320, 32, BLACK);
 
 };

@@ -1,46 +1,65 @@
 #include "intro.h"
 
-CIntro::CIntro(CUI* p_userInteraction)
+intro::intro(graphics* pg, keyboard* pk, mouse* pm, SDL_Event* pe)
+    : b(pg->GetRenderer(),"data/IntroBackground.png", 1280, 720),
+      btn_new_game(g->GetRenderer(), "New Game", 510, 32 * 5, 320, 32)
 {
 	quit = false;
-	csdl_setup = new CSDL_Setup(&quit, 640, 512);
-	background = new CLandscape(csdl_setup->GetRenderer(), "data/IntroBackground.png", 640, 512);
-	//GUI = new CIntroGUI();
-	newgamebtn = NULL;
-	newgamebtn = new Cbutton(csdl_setup->GetRenderer(), 320, 32 * 5, "New Game");
-	loadgamebtn = new Cbutton(csdl_setup->GetRenderer(), 320, 32 * 7, "Load Game");
-	quitbtn = new Cbutton(csdl_setup->GetRenderer(), 320, 32 * 11, "Quit");
-
-	userInteraction = new CUI(*p_userInteraction);
+    g = pg;
+    k = pk;
+    m = pm;
+    e = pe;
 }
 
-CIntro::~CIntro()
+intro::~intro()
 {
-	delete csdl_setup;
-	delete background;
-	delete newgamebtn;
-	delete loadgamebtn;
-	delete quitbtn;
-	delete userInteraction;
 
 }
 
-void CIntro::intro()
+int intro::main()
 {
-	while (!quit && csdl_setup->GetMainEvent()->type != SDL_QUIT)
-	{
-		csdl_setup->Begin();
+    while(!quit){
+        while(SDL_PollEvent(e)){
+            switch(e->type)
+            {
+            case SDL_QUIT:
+                quit = true;
+                break;
+            case SDL_MOUSEBUTTONDOWN:
+                if(btn_new_game.InButton(m->GetPosition()) && m->GetState(SDL_BUTTON_LEFT))
+                {
+                    std::cout<<"New Game, BOIIIISsss"<<std::endl;
+                    break;
+                }
+             /*   else if(btn_load_game.InButton(m.GetPosition()) && m.GetState(SDL_BUTTON_LEFT))
+                {
+                    std::cout<<"Load Game, BOIIIISsss"<<std::endl;
+                    break;
+                }
+                else if(btn_options.InButton(m.GetPosition()) && m.GetState(SDL_BUTTON_LEFT))
+                {
+                    std::cout<<"Options, BOIIIISsss"<<std::endl;
+                    break;
+                }
+                else if(btn_quit.InButton(m.GetPosition()) && m.GetState(SDL_BUTTON_LEFT))
+                {
+                    std::cout<<"Bye, BOIIIISsss"<<std::endl;
+                    quit = true;
+                    break;
+                }*/
+            }
+        }        
 
-		userInteraction->SortEvent(csdl_setup->GetMainEvent());
+        g->Begin();
+        b.Draw();
+        btn_new_game.Draw();
+        /*
+        btn_load_game.Draw();
+        btn_options.Draw();
+        btn_quit.Draw();*/
+        g->End();
+    }
 
 
-
-		background->Draw();
-		newgamebtn->draw();
-		loadgamebtn->draw();
-
-		quitbtn->draw();
-
-		csdl_setup->End();
-	}
+    return 0;
 }

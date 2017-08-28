@@ -204,6 +204,33 @@ src/graphics.cpp.s:
 	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/graphics.cpp.s
 .PHONY : src/graphics.cpp.s
 
+src/intro.o: src/intro.cpp.o
+
+.PHONY : src/intro.o
+
+# target to build an object file
+src/intro.cpp.o:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/intro.cpp.o
+.PHONY : src/intro.cpp.o
+
+src/intro.i: src/intro.cpp.i
+
+.PHONY : src/intro.i
+
+# target to preprocess a source file
+src/intro.cpp.i:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/intro.cpp.i
+.PHONY : src/intro.cpp.i
+
+src/intro.s: src/intro.cpp.s
+
+.PHONY : src/intro.s
+
+# target to generate assembly for a file
+src/intro.cpp.s:
+	$(MAKE) -f CMakeFiles/FirstRPG.dir/build.make CMakeFiles/FirstRPG.dir/src/intro.cpp.s
+.PHONY : src/intro.cpp.s
+
 src/keyboard.o: src/keyboard.cpp.o
 
 .PHONY : src/keyboard.o
@@ -303,6 +330,9 @@ help:
 	@echo "... src/graphics.o"
 	@echo "... src/graphics.i"
 	@echo "... src/graphics.s"
+	@echo "... src/intro.o"
+	@echo "... src/intro.i"
+	@echo "... src/intro.s"
 	@echo "... src/keyboard.o"
 	@echo "... src/keyboard.i"
 	@echo "... src/keyboard.s"
