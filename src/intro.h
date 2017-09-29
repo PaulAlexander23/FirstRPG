@@ -8,7 +8,7 @@
 class intro
 {
 public:
-	intro();
+    intro(graphics* pg, keyboard* pk, mouse* pm, SDL_Event* pe);
 	~intro();
 
 	int main();
@@ -22,8 +22,8 @@ private:
 
 	background b;
 	button btn_new_game;
-    //button btn_load_game(g.GetRenderer(), ubuntu_regular, "Load Game", 510, 32 * 7, 320, 32, BLACK);
-  	//button btn_options(g.GetRenderer(), ubuntu_regular, "Options", 510, 32 * 9, 320, 32, BLACK);
-    //button btn_quit(g.GetRenderer(), ubuntu_regular, "Quit", 510, 32 * 11, 320, 32, BLACK);
+    button btn_load_game;
+  	button btn_options;
+    button btn_quit;
 
 };
